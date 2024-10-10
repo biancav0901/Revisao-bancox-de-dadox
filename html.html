@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.nota-fiscal {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header, section, footer {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+</style>
+<body>
+    <div class="nota-fiscal">
+        <header>
+            <h1>Nota Fiscal</h1>
+            <p>Data: <span id="data-emissao"></span></p>
+            <p>Número: <span id="numero"></span></p>
+        </header>
+        <section class="dados-empresa">
+            <h2>Dados da Empresa</h2>
+            <p>Nome: <span id="nome-empresa"></span></p>
+            <p>CNPJ: <span id="cnpj-empresa"></span></p>
+            <p>Endereço: <span id="endereco-empresa"></span></p>
+        </section>
+        <section class="dados-cliente">
+            <h2>Dados do Cliente</h2>
+            <p>Nome: <span id="nome-cliente"></span></p>
+            <p>CNPJ/CPF: <span id="cpf-cnpj-cliente"></span></p>
+            <p>Endereço: <span id="endereco-cliente"></span></p>
+        </section>
+        <section class="itens">
+            <h2>Itens</h2>
+            <table id="tabela-itens">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Itens serão inseridos aqui -->
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <p>Total: <span id="total"></span></p>
+        </footer>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
+
